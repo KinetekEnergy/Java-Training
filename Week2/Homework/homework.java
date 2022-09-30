@@ -159,8 +159,6 @@ public class homework
         calculate(); 
 
         /*
-            Operations should consist of 
-                cube root, 
             - Challenge: Use one input statement for the first number, operation, and the second number. (Hint: Seperate the inputs by spaces)
             - Store the numbers & operations in two different arrays
         */

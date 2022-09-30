@@ -20,11 +20,12 @@ public class homework_stripped
         //IMPORTANT: char[1] does NOT make an array of two elements
         //As opposed to C, new char[1] creates an array of ONE element
         //Indexing for creation doesn't start at zero but indexing for ACCESSING starts at 0
-        //char operator[] = new char[1]; 
+        char operator_arr[] = new char[1]; 
 
         numbers[0] = scanf.nextInt(); 
         //operator[0] = scanf.next().charAt(0); 
         char operator = scanf.next().charAt(0);
+        operator_arr[0] = operator;
         numbers[1] = scanf.nextInt(); 
 
         int answer = 0;
@@ -110,8 +111,6 @@ public class homework_stripped
         calculate(); 
 
         /*
-            Operations should consist of 
-                cube root, 
             - Challenge: Use one input statement for the first number, operation, and the second number. (Hint: Seperate the inputs by spaces)
             - Store the numbers & operations in two different arrays
         */
