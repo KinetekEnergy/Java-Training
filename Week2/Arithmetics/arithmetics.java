@@ -1,7 +1,7 @@
 public class arithmetics {
     public static void main(String[] args) {
         float answer = ((6 * 1234124) / 11345 - 890809 + 90800) % 980098;
-        answer = answer / 100;
+        answer /= 100;
 
         System.out.println(answer);
 
