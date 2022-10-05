@@ -6,12 +6,12 @@ public class while_loops {
          */
 
         int num = 64;
-        System.out.println(num);
 
-        while (num > 1)
+        while (num >= 1)
         {
-            num /=2;
             System.out.println(num);
+            num /=2;
+            
         }
     }
 }
