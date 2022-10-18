@@ -1,42 +1,37 @@
 import java.util.*;
 
 public class classes_objects {
-    public static void main(String[] args) {
-        Scanner scanf = new Scanner(System.in); // scanf
-        // <TYPE> input = scanf.next<TYPE>(); format
-        // next.Int() for integers
-        Me myObj = new Me();
-
-        /*
-         * Create a class called "Me" & intialize variables name and age
-         * - Create parameters for these variables and set them to the variables in the
-         * constructor
-         * Create 2 method that returns your name and age
-         * Create an object for this class in the main method, & use the method to
-         * print!
-         */
-    }
-
-    class Me
+    public class Me
     {
-        Stridng name;
+        String name;
         int age;
 
-        Me(String n, int a)
+        static void name ()
         {
-            name = n;
-            age = a;
+            System.out.println(name);
         }
 
-    }
+        static void age()
+        {
+            System.out.println(age);
+        }
 
-    public static String name (String n)
-    {
-        return n;
-    }
+        public static void main(String[] args) {
+            Me myObj = new Me();
 
-    public static int age(int age)
-    {
-        return age;
+            myObj.name = "walter";
+            myObj.age = 40;
+
+            name();
+            age();
+    
+            /*
+             * Create an object for this class in the main method, & use the method to
+             * print!
+             */
+        }
     }
+    
+
+    
 }

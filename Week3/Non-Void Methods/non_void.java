@@ -3,24 +3,17 @@ import java.util.*;
 
 public class non_void {
     public static void main(String[] args) {
-        Scanner scanf = new Scanner(System.in); // scanf
-        // <TYPE> input = scanf.next<TYPE>(); format
-        // next.Int() for integers
 
-        //scanf everything
-        String inputS = scanf.nextLine();
-        float inputF = scanf.nextFloat();
-        boolean inputB = scanf.nextBoolean();
        
 
-        string_function(inputS);
-        float_function(inputF);
-        bool_function(inputB);
+        String s = string_function("hubert");
+        int i = int_function(5);
+        boolean b = bool_function(true);
 
 
-        System.out.println(inputS);
-        System.out.println(inputF);
-        System.out.println(inputB);
+        System.out.println(s);
+        System.out.println(i);
+        System.out.println(b);
     }
 
     public static String string_function(String s)
@@ -30,9 +23,9 @@ public class non_void {
         return sn;
     }
 
-    public static float float_function(float f)
+    public static int int_function(int f)
     {
-        float fn = f*2;
+        int fn = f*2;
         return fn;
     }
 
